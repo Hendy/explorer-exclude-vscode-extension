@@ -7,7 +7,7 @@ const util = require('./util')
 
 class ViewPane {
   constructor(viewPaneName) {
-    this.defaultExclude = ['**/.git', '**/.svn', '**/.hg', '**/CVS', '**/.DS_Store', '**/Thumbs.db', '**/*.git']
+    this.defaultExclude = []
     this.viewUpdatedEventEmitter = new vscode.EventEmitter()
     this.onDidChangeTreeData = this.viewUpdatedEventEmitter.event
     this.tree = {
